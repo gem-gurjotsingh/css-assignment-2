@@ -1,0 +1,59 @@
+.container {
+    font-size: 20px; /* base font size for rem and em calculations */
+  }
+
+  /* Descendant combinator (space) */
+  .container h1 {
+    color: red;
+  }
+
+  .hs1.hs2{
+     font-size: 35px;
+  }
+
+  .rem {
+    font-size: 1.5rem; /* 1.5 times the base font size */
+  }
+  
+  .em {
+    font-size: 1.5em; /* 1.5 times the current font size */
+  }
+  
+  .vh {
+    height: 40vh; /* 50% of the viewport height */
+  }
+  
+  .vw {
+    width: 40vw; /* 50% of the viewport width */
+  }
+  
+  .px {
+    font-size: 20px; /* fixed size in pixels */
+  }
+
+/* Child combinator (>) */
+.container > p {
+    color: blue;
+}
+
+  /* Adjacent sibling combinator (+) */
+  .subcontainer + h2 {
+    color: green;
+  }
+  
+  /* General sibling combinator (~) */
+  .subcontainer ~ p {
+    color: yellow;
+  }
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(81, 0, 255);
+    transition: transform 3s;
+  }
+  
+/* rotate 90 degrees using a 3-second transition */  
+.box:hover {
+    transform: rotate(90deg);
+}
